@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    </head>
+<body>
+    <h1>Apex inventory management</h1>
+    <button disabled="true" class="emptyinventory">Empty inventory</button>
+    <button id="takeAll" class="takeAll">Take all</button>
+    <div id="container">
+        <div id="ground">
+            <h3>Ground</h3>
+            <div id="groundLoot">
+                <div id="weapons">
+                    <div id="R-301" onclick="pickR301">R-301</div>
+                    <div id="R-99" onclick="pickR99">R-99</div>
+                    <div id="RE-45" onclick="pickRE45">RE-45</div>
+                    <div id="P2020" onclick="pickp20">P2020</div>
+                    <div id="G7" onclick="pickG7">G7-scout</div>
+                    <div id="spitfire" onclick="pickSpitfire">M-600 spitfire</div>
+                    <div id="alternator" onclick="pickAlternator">Alternator</div>
+                    <div id="flatline" onclick="pickFlatline">VK-47 Flatline</div>
+                    <div id="hemlok" onclick="pickHemlok">Hemlok</div>
+                    <div id="rampage" onclick="pickRampage">Rampage</div>
+                    <div id="reprep" onclick="pick3030">3030-Repeter</div>
+                    <div id="car" onclick="pickCar">C.A.R SMG</div>
+                    <div id="devo" onclick="pickDevo">Devotion LMG</div>
+                    <div id="l-star" onclick="pickLstar">L-star EMG</div>
+                    <div id="TripleTake" onclick="pickTripletake">Triple take</div>
+                    <div id="havoc" onclick="pickHavoc">Havoc</div>
+                    <div id="volt" onclick="pickVolt">Volt</div>
+                    <div id="nemisis" onclick="pickNemisis">Nemisis</div>
+                    <div id="Senti" onclick="pickSenti">Sentinel</div>
+                    <div id="longbow" onclick="pickLongbow">Longbow</div>
+                    <div id="Yarge" onclick="pickyarge">Charge rifle</div>
+                    <div id="mozam" onclick="pickmozam">Mozambique here!</div>
+                    <div id="eva-8" onclick="pickeva">Eva-8 auto</div>
+                    <div id="PK" onclick="pickPK">Peacekeeper</div>
+                    <div id="Mastiff" onclick="pickMastiff">Mastiff</div>
+                </div>
+                <div id="ammo">
+                    <div id="lightAmmo" onclick="picklight">Light ammo(60)</div>
+                    <div id="heavyAmmo" onclick="pickheavy">Heavy ammo(60)</div>
+                    <div id="energyAmmo" onclick="pickenergy">Energy ammo(60)</div>
+                    <div id="sniperAmmo" onclick="picksniper">Sniper ammo(24)</div>
+                    <div id="shotgunAmmo" onclick="pickshotgun">Shogun ammo(16)</div>
+                </div>
+                <div id="heals">
+                    <div id="shielcell" onclick="pickCell">Shield cell</div>
+                    <div id="shielbatt" onclick="pickBatt">Shield battery</div>
+                    <div id="syringe" onclick="pickSyringe">Syringe</div>
+                    <div id="medKit" onclick="pickMedKit">Med kit</div>
+                </div>
+                <div id="utility">
+                    <div id="frag" onclick="pickfrag">Frag grenade</div>
+                    <div id="arc" onclick="pickarc">Arc Star</div>
+                    <div id="thermite" onclick="pickthermite">Thermite grenade</div>
+                    <div id="ultAccel" onclick="pickUltAccel">Ultimate Accelerant</div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="inventory">
+            <h3>Inventory</h3>
+            
+        </div>
+
+    </div>
+
+    <script src="MoveButtons.js"></script>
+    //Backpack slots: None=10 White=12 blue=14 purple=16 gold=16(can carry 3 shieldbatts, 3 medkits and 2 phoenixes)
+</body>
+</html>
