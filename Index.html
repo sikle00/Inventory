@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
     </head>
+    <link rel="stylesheet" href="style.css">
 <body>
     <h1>Apex inventory management</h1>
     <button disabled="true" class="emptyinventory">Empty inventory</button>
@@ -14,31 +15,92 @@
             <h3>Ground</h3>
             <div id="groundLoot">
                 <div id="weapons">
-                    <div id="R-301" onclick="pickR301">R-301</div>
-                    <div id="R-99" onclick="pickR99">R-99</div>
-                    <div id="RE-45" onclick="pickRE45">RE-45</div>
-                    <div id="P2020" onclick="pickp20">P2020</div>
-                    <div id="G7" onclick="pickG7">G7-scout</div>
-                    <div id="spitfire" onclick="pickSpitfire">M-600 spitfire</div>
-                    <div id="alternator" onclick="pickAlternator">Alternator</div>
-                    <div id="flatline" onclick="pickFlatline">VK-47 Flatline</div>
-                    <div id="hemlok" onclick="pickHemlok">Hemlok</div>
-                    <div id="rampage" onclick="pickRampage">Rampage</div>
-                    <div id="reprep" onclick="pick3030">3030-Repeter</div>
-                    <div id="car" onclick="pickCar">C.A.R SMG</div>
-                    <div id="devo" onclick="pickDevo">Devotion LMG</div>
-                    <div id="l-star" onclick="pickLstar">L-star EMG</div>
-                    <div id="TripleTake" onclick="pickTripletake">Triple take</div>
-                    <div id="havoc" onclick="pickHavoc">Havoc</div>
-                    <div id="volt" onclick="pickVolt">Volt</div>
-                    <div id="nemisis" onclick="pickNemisis">Nemisis</div>
-                    <div id="Senti" onclick="pickSenti">Sentinel</div>
-                    <div id="longbow" onclick="pickLongbow">Longbow</div>
-                    <div id="Yarge" onclick="pickyarge">Charge rifle</div>
-                    <div id="mozam" onclick="pickmozam">Mozambique here!</div>
-                    <div id="eva-8" onclick="pickeva">Eva-8 auto</div>
-                    <div id="PK" onclick="pickPK">Peacekeeper</div>
-                    <div id="Mastiff" onclick="pickMastiff">Mastiff</div>
+                    <div id="lightWeapons">
+                        <div id="R-301" onclick="pickR301()">
+                            <img src="/Weapon img/Light weapons/R-301.png">
+                        </div>
+                        <div id="R-99" onclick="pickR99()">
+                            <img src="/Weapon img/Light weapons/R-99.png">
+                        </div>
+                        <div id="RE-45" onclick="pickRE45()">
+                            <img src="/Weapon img/Light weapons/RE-45.png">
+                        </div>
+                        <div id="P2020" onclick="pickp20()">
+                            <img src="Weapon img/Light weapons/P2020.png">
+                        </div>
+                        <div id="G7" onclick="pickG7()">
+                            <img src="Weapon img/Light weapons/G7.png">
+                        </div>
+                        <div id="spitfire" onclick="pickSpitfire()">
+                            <img src="Weapon img/Light weapons/Spitfire.png">
+                        </div>
+                        <div id="alternator" onclick="pickAlternator()">
+                            <img src="Weapon img/Light weapons/Alternator.png">
+                        </div>
+                    </div>
+                    <div id="heavyWeapons">
+                        <div id="flatline" onclick="pickFlatline()">
+                            <img src="Weapon img/Heavy weapons/Flatline.png">
+                        </div>
+                        <div id="hemlok" onclick="pickHemlok()">
+                            <img src="Weapon img/Heavy weapons/Hemlok.png">
+                        </div>
+                        <div id="rampage" onclick="pickRampage()">
+                            <img src="Weapon img/Heavy weapons/Rampage.png">
+                        </div>
+                        <div id="reprep" onclick="pick3030()">
+                            <img src="Weapon img/Heavy weapons/30-30.png">
+                        </div>
+                        <div id="car" onclick="pickCar()">
+                            <img src="Weapon img/Heavy weapons/Car.png">
+                        </div>
+                    </div>
+                    <div id="energyWeapons">
+                        <div id="devo" onclick="pickDevo()">
+                            <img src="Weapon img/Energy weapons/Devotion.png">
+                        </div>
+                        <div id="l-star" onclick="pickLstar()">
+                            <img src="Weapon img/Energy weapons/L-star.png">
+                        </div>
+                        <div id="TripleTake" onclick="pickTripletake()">
+                            <img src="Weapon img/Energy weapons/Triple take.png">
+                        </div>
+                        <div id="havoc" onclick="pickHavoc()">
+                            <img src="Weapon img/Energy weapons/Havoc.png">
+                        </div>
+                        <div id="volt" onclick="pickVolt()">
+                            <img src="Weapon img/Energy weapons/Volt.png">
+                        </div>
+                        <div id="nemisis" onclick="pickNemisis()">
+                            <img src="Weapon img/Energy weapons/Nemesis.png">
+                        </div>
+                    </div>
+                    <div id="snipers">
+                        <div id="Senti" onclick="pickSenti()">
+                            <img src="Weapon img/Snipers/Senti.png">
+                        </div>
+                        <div id="longbow" onclick="pickLongbow()">
+                            <img src="Weapon img/Snipers/Longbow.png">
+                        </div>
+                        <div id="Yarge" onclick="pickyarge()">
+                            <img src="Weapon img/Snipers/Yarge rifle.png">
+                        </div>
+                    </div>
+                    <div id="shotguns">
+                        <div id="mozam" onclick="pickmozam()">
+                            <img src="Weapon img/Shotguns/Mozambique.png">
+                        </div>
+                        <div id="eva-8" onclick="pickeva()">
+                            <img src="Weapon img/Shotguns/Eva-8.png">
+                        </div>
+                        <div id="PK" onclick="pickPK()">
+                            <img src="Weapon img/Shotguns/PK.png">
+                        </div>
+                        <div id="Mastiff" onclick="pickMastiff()">
+                            <img src="Weapon img/Shotguns/Mastiff.png">
+                        </div>
+                    </div>
+                    
                 </div>
                 <div id="ammo">
                     <div id="lightAmmo" onclick="picklight">Light ammo(60)</div>
@@ -70,6 +132,5 @@
     </div>
 
     <script src="MoveButtons.js"></script>
-    //Backpack slots: None=10 White=12 blue=14 purple=16 gold=16(can carry 3 shieldbatts, 3 medkits and 2 phoenixes)
 </body>
 </html>

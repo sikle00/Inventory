@@ -1,0 +1,39 @@
+#container {
+    display: grid;
+    height: 1000px;
+    background-image: url("Weapon img/TheGameOfMyLife.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#ground {
+    color: azure;
+}
+
+img{
+    height: 75px;
+}
+#heavyWeapons {
+    margin-left: 150px;
+    margin-top: -550px;
+}
+#energyWeapons {
+    margin-left: 300px;
+    margin-top: -400px;
+}
+#snipers {
+    margin-left: 450px;
+    margin-top: -475px;
+}
+#shotguns {
+    margin-left: 600px;
+    margin-top: -238px;
+}
+#inventory{ 
+    margin-left: 850px;
+    margin-top: -1000px;
+    color: azure;
+    /*Backpack slots: None=10 White=12 blue=14 purple=16 gold=16(can carry 3 shieldbatts, 3 medkits and 2 phoenixes)*/
+}
