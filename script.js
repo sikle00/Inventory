@@ -1,8 +1,8 @@
+let stier1 = ''
 
 
-
-function light('light'){
-    document.getElementById('lightg').innerHTML = /*HTML*/
+function pickR301(){
+    document.getElementById("R-301").innerHTML = /*HTML*/
     ''
-    document.getElementById('lighti').innerHTML = /*HTML*/
+    document.getElementById("R-310").innerHTML = /*HTML*/
 }
